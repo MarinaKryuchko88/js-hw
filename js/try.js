@@ -185,8 +185,45 @@
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 4]));
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const planets = ["Земля", "Марс", "Венера"];
+// function getEvenNumbers(start, end) {
+//   // Пиши код ниже этой строки
+//   const arrayEvenNumbers = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       arrayEvenNumbers.push(i);
+//     }
+//   }
+//   return arrayEvenNumbers;
+//   // Пиши код выше этой строки
+// }
+// console.log(getEvenNumbers(6, 12));
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// function fn() {
+//   for (let i = 0; i <= 5; i += 1) {
+//     console.log(i);
 
-for (const planet of planets) {
-  console.log(planet);
-}
+//     if (i === 3) {
+//       console.log("Нашли число 3, делаем возврат, прерывая цикл и функцию");
+//       return i;
+//     }
+//   }
+
+//   // Этот console.log не выполнится
+//   console.log("Лог после цикла в теле функции");
+// }
+
+// const result = fn();
+// console.log("Лог после выхода из функции");
+// console.log(`Результат выполнения функции ${result}`);
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+const users = [
+  { name: "Mango", isActive: true },
+  { name: "Poly", isActive: false },
+  { name: "Ajax", isActive: true },
+  { name: "Chelsey", isActive: false },
+];
+
+// Для каждого элемента коллекции (user) проверим поле isActive.
+// Если оно true, то текущий элемент (user) будет записан в результирующий массив.
+const activeUsers = users.filter((user) => user.isActive);
+console.log(activeUsers);
